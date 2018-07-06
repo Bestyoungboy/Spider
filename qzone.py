@@ -21,6 +21,8 @@ driver.get('https://i.qq.com/?rd=1')
 # driver.implicitly_wait(10)
 # print(driver.page_source)
 
+# 尝试请求到真正的登陆页面
+
 while True:
     try:
         # loginLable = driver.find_element_by_xpath('//*[@id="switcher_plogin"]')
@@ -37,9 +39,9 @@ while True:
         sleep(0.1)
 
 loginLable.click()
-driver.find_element_by_id('u').send_keys('406069993')
+driver.find_element_by_id('u').send_keys('QQ账号')
 
-driver.find_element_by_id('p').send_keys('clannad8.')
+driver.find_element_by_id('p').send_keys('QQ密码')
 
 driver.find_element_by_xpath('//input[@class="btn"]').click()
 

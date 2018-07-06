@@ -11,4 +11,9 @@ import scrapy
 class BaikeItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    # 一级标题
+    level1Title = scrapy.Field()
+    # 二级标题
+    level2Title = scrapy.Field()
+    # 描述
+    content = scrapy.Field()
